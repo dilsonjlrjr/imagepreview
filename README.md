@@ -1,13 +1,20 @@
 #imagepreview
 ***
 
+## Description
+
 With this plug creates a preview of an image, from a given resolution. Compatible with [Bootstrat 3](http://getbootstrap.com/getting-started/#download) and [JQuery](http://getbootstrap.com/getting-started/#download).
+
+### Options
+
 
 ## Demo
 
-In development.
+[http://www.dilsonjunior.eti.br/imagepreview/](http://www.dilsonjunior.eti.br/imagepreview/)
 
 ## Installation
+
+In Development
 
 #### HTML HEAD:
 ```
