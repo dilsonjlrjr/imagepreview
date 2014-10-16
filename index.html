@@ -8,25 +8,37 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        
         <link href="css/jquery-image-preview.css" rel="stylesheet" type="text/css">
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		
         <script src="js/jquery-image-preview.js"></script>
 	</head>
 	<body>
-		<div class="image-preview" id="id-image-preview">
-		    <div class="image-wrap" data-image-width="675" data-image-height="335" data-img-name="img-curso">
-		        <div class="image-default">
-		            <img src="images/image-default-preview.png" />
-		        </div>
-		    </div>
-		    
-		    <div class="message"></div>
-		    
-		    <div class="action">
-		        <button type="button" class="btn btn-primary btn-block btn-image-preview">
-		            <i class="fa fa-cloud-upload"></i> Importar Imagem
-		        </button>
-		    </div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="image-preview" id="id-image-preview">
+					    <div class="image-wrap" data-image-width="675" data-image-height="335" data-img-name="img-curso">
+					        <div class="image-default">
+					            <img src="images/image-default-preview.png" />
+					        </div>
+					    </div>
+					    
+					    <div class="message"></div>
+					    
+					    <div class="action">
+					        <button type="button" class="btn btn-primary btn-block btn-image-preview">
+					            <i class="fa fa-cloud-upload"></i> Importar Imagem
+					        </button>
+					    </div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<script type="text/javascript">
