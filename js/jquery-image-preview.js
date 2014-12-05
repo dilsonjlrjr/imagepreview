@@ -63,17 +63,7 @@
 
         btnimagepreview.on("click", function () {
             wrapImage(componentimagepreview, imagewrap);
-        });
-
-        imageComponent.resolution.width = imagewrap.data("image-width");
-        imageComponent.resolution.height = imagewrap.data("image-height");
-        imageComponent.name = imagewrap.data("img-name");
-        imageComponent.id = imagewrap.data("img-name");
-
-        if ((typeof imageComponent.resolution.width === "undefined") || (typeof imageComponent.resolution.height === "undefined")) {
-            imageComponent.resolution.width = imagewrap.width();
-            imageComponent.resolution.height = imagewrap.height();
-        }                
+        });                
     }
 
     function printMessageError(wrapImage, message) {
@@ -122,6 +112,16 @@
     }
 
     function wrapImage(target, imagewrap) {
+        imageComponent.resolution.width = imagewrap.data("image-width");
+        imageComponent.resolution.height = imagewrap.data("image-height");
+        imageComponent.name = imagewrap.data("img-name");
+        imageComponent.id = imagewrap.data("img-name");
+
+        if ((typeof imageComponent.resolution.width === "undefined") || (typeof imageComponent.resolution.height === "undefined")) {
+            imageComponent.resolution.width = imagewrap.width();
+            imageComponent.resolution.height = imagewrap.height();
+        }
+        
         inputfile.create(target);        
 
         $('#' + inputfile.idinput).on("change", function () {
